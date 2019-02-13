@@ -77,6 +77,8 @@ int main() {
             meas_package.raw_measurements_ << px, py;
             iss >> timestamp;
             meas_package.timestamp_ = timestamp;
+            
+            
           } else if (sensor_type.compare("R") == 0) {
             meas_package.sensor_type_ = MeasurementPackage::RADAR;
             meas_package.raw_measurements_ = VectorXd(3);
@@ -90,7 +92,6 @@ int main() {
             iss >> timestamp;
             meas_package.timestamp_ = timestamp;
           }
-
           float x_gt;
           float y_gt;
           float vx_gt;
@@ -139,6 +140,7 @@ int main() {
           auto msg = "42[\"estimate_marker\"," + msgJson.dump() + "]";
           // std::cout << msg << std::endl;
           ws.send(msg.data(), msg.length(), uWS::OpCode::TEXT);
+          
 
         }  // end "telemetry" if
 
