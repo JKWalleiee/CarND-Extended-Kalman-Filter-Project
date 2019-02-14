@@ -54,7 +54,7 @@ And the following image shows the results using only radar measurements.
 
 From the information learned in the classes, I would expect that the estimated position using only laser would be more accurate than that estimated using only radar,  and, on the other hand, I would expect that the velocity estimated by the radar would be more accurate. 
 
-Analyzing the individual results for each sensor, it is observed that, as expected, the positions estimated by the laser are more accurate than those estimated by the radar (RSME Laser p = [0.1222, 0.0984]) <RSME Radar p = [0.1918, 0.2798]), and the trajectory estimated by the radar is more irregular. However, the velocity assumption is not met, since the RMSE of the velocity is lower only for one of the velocity components of the radar (Vx) compared to the RSME velocity of the laser. This, however, may be due to two main reasons:
+Analyzing the individual results for each sensor, it is observed that, as expected, the positions estimated by the laser are more accurate than those estimated by the radar (RSME Laser p = [0.1222, 0.0984]) < RSME Radar p = [0.1918, 0.2798]), and the trajectory estimated by the radar is more irregular. However, the velocity assumption is not met, since the RMSE of the velocity is lower only for one of the velocity components of the radar (Vx) compared to the RSME velocity of the laser. This, however, may be due to two main reasons:
 - The estimated velocity depends on the estimated position, then, the noise in the radar position affects the velocity estimation.
 - In the velocity estimation a linear model is used, however, the trajectory of the vehicle in the simulator is non-linear.
 
