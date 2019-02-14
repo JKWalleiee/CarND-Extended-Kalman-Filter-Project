@@ -1,7 +1,7 @@
 # CarND-Extended-Kalman-Filter-Project
 Self-Driving Car Engineer Nanodegree Program - Extended Kalman Filter Implementation
 
-This project consists of implementing an Extended Kalman Filter (EKF) with C ++. The objective is to track the position and velocity of a bicycle using noisy Radar and Lidar measurements, which are generated in a simulator provided by Udacity ( [link](https://github.com/udacity/self-driving-car-sim/releases) ). The EKF filter fuses these measurements to predict the position and velocity of the bicycle.
+This project consists of implementing an Extended Kalman Filter (EKF) with C ++. The objective is to track the position and velocity of a bicycle using noisy Radar and Lidar measurements, which are generated in a simulator provided by Udacity ([link](https://github.com/udacity/self-driving-car-sim/releases) ). The EKF filter fuses these measurements to predict the position and velocity of the bicycle.
 
 ---
 
