@@ -1,7 +1,7 @@
 # CarND-Extended-Kalman-Filter-Project
 Self-Driving Car Engineer Nanodegree Program - Extended Kalman Filter Implementation
 
-This project consists of implementing an Extended Kalman Filter (EKF) with C ++. The objective is to track the position and velocity of a bicycle using noisy Radar and Lidar measurements, which are generated in a simulator provided by Udacity ([link](https://github.com/udacity/self-driving-car-sim/releases) ). The EKF filter fuses these measurements to predict the position and velocity of the bicycle.
+This project consists of implementing an Extended Kalman Filter (EKF) with C ++. The objective is to track the position and velocity of a bicycle using Radar and Lidar measurements, which are generated in a simulator provided by Udacity ([link](https://github.com/udacity/self-driving-car-sim/releases) ). The EKF filter fuses these measurements to predict the position and velocity of the bicycle.
 
 ---
 
@@ -30,7 +30,7 @@ In this project it is required to have a Root Mean Squared errors (RMSE) maximum
 
 ## Follows the Correct Algorithm.
 
-TThe EKF implementation can be found in [src/kalman_filter.cpp](https://github.com/JKWalleiee/CarND-Extended-Kalman-Filter-Project/blob/master/src/kalman_filter.cpp). The processing flow can be found in [src/FusionEKF.cpp]](https://github.com/JKWalleiee/CarND-Extended-Kalman-Filter-Project/blob/master/src/FusionEKF.cpp) (Update step in line 149 and Predict step in lines 162-172).
+TThe EKF implementation can be found in [src/kalman_filter.cpp](https://github.com/JKWalleiee/CarND-Extended-Kalman-Filter-Project/blob/master/src/kalman_filter.cpp). The processing flow can be found in [src/FusionEKF.cpp](https://github.com/JKWalleiee/CarND-Extended-Kalman-Filter-Project/blob/master/src/FusionEKF.cpp) (Update step in line 149 and Predict step in lines 162-172).
 
 ## Code Efficiency
 An example of this calculation optimization is when the Q matrix is calculated ([src/FusionEKF.cpp](https://github.com/JKWalleiee/CarND-Extended-Kalman-Filter-Project/blob/master/src/FusionEKF.cpp) lines 138-146.)
